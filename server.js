@@ -42,7 +42,7 @@ app.use(express.urlencoded({ extended: true, limit: "5mb" }));
 app.use(favicon(path.join(path.dirname(fileURLToPath(import.meta.url)), "src", "assets", "images", "favicon.ico")));
 
 app.use("/api", routes);
-app.all("/*", (_, res) => res.json({ body: "Render deployed!" }));
+app.all("/*", (_, res) => res.json({ body: "Render deployed!!" }));
 
 app.use(Sentry.Handlers.errorHandler());
 
